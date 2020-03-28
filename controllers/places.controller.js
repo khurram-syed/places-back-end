@@ -84,8 +84,8 @@ const updatePlace = (req,res,next)=>{
         throw new HttpError("Invalid place ID..!! ", 404)
     }
     const {title,description} = req.body
-    console.log("Update place - req.body:",req.body)
     
+    console.log("Update place - req.body:",req.body)
     console.log('*****updatePlace -  place ****',placeIdx)
     DUMMY_PLACES[placeIdx].title=title
     DUMMY_PLACES[placeIdx].description=description
